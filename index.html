@@ -1,140 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>AI-rt | 私の興味・関心・学習メモ</title>
-    <meta name="description" content="日々の情報収集、AI・コーディング学習経過、役立つリンクやTipsをまとめるサイトです。">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        html, body {
-            background: linear-gradient(to bottom, #111, #1a1a1a); /* グラデーション背景 */
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-            margin: 0;
-            padding: 0;
-            font-size: 18px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        article {
-            max-width: 680px;
-            margin: 48px auto 24px auto;
-            background: rgba(30,30,30,0.94);
-            border-radius: 28px;
-            box-shadow: 0 8px 40px 0 rgba(0,0,0,0.30);
-            padding: 48px 32px 32px 32px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 36px;
-        }
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-        }
-        h2 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
-            border-left: 4px solid #fff3;
-            padding-left: 12px;
-        }
-        ul {
-            margin: 0 0 16px 20px;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        a {
-            color: #5bf;
-            text-decoration: none;
-            border-bottom: 1px dotted #5bf;
-            transition: color 0.15s;
-        }
-        a:hover {
-            color: #0af;
-            border-bottom: 1px solid #0af;
-        }
-        footer {
-            text-align: center;
-            color: #bbb;
-            margin-top: 40px;
-            font-size: 0.95em;
-        }
-        @media (max-width: 600px) {
-            article {
-                padding: 24px 16px 16px 16px;
-            }
-            h1 {
-                font-size: 1.4rem;
-            }
-            h2 {
-                font-size: 1.05rem;
-            }
-            body {
-                font-size: 15px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>HTMLテンプレート</title>
+  <meta name="description" content="ここにサイトの説明。">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:title" content="サイトタイトル">
+  <meta property="og:description" content="ここにサイトの説明。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+    body { margin: 0; font-family: 'Noto Sans JP', Arial, sans-serif; background: #fff; color: #222; }
+    main { max-width: 900px; margin: 2rem auto; }
+    a:focus, a:hover { outline: 2px solid #0af; }
+    @media (max-width:600px) { main { margin: 1rem 0; padding: 0 0.5rem; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "サイト名",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.png"
+  }
+  </script>
 </head>
 <body>
-    <!-- 将来の拡張用ナビゲーション -->
-    <nav style="display:none;"></nav>
-
+  <header>
+    <h1>サイトタイトル</h1>
+    <nav aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <article>
-        <header>
-            <h1>AI_rt</h1>
-            <p>〜AI初学者徒然〜</p>
-        </header>
-
-        <section>
-            <h2>目次</h2>
-            <ul>
-                <li>AI</li>
-                <li>Python</li>
-                <li>HTML</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>日々</h2>
-            <ul>
-                <li>2025-07-09　AIとWebの連携について調査</li>
-                <li>2025-07-08　YOLOによる人物検知をテスト</li>
-                <li>2025-07-07　S3バケットとPython連携を実装</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>リンク</h2>
-            <ul>
-                <li><a href="https://ja.wikipedia.org/wiki">Wikipedia</a></li>
-                <li><a href="https://www.python.org/">Python公式サイト</a></li>
-                <li><a href="https://github.com/">GitHub</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Tips & メモ</h2>
-            <ul>
-                <li>YOLO導入はultralyticsパッケージが簡単</li>
-                <li>環境変数は.envとpython-dotenvで管理</li>
-                <li>ショートカットキー</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Copyright &copy; 2025 AI-rt</p>
-        </footer>
+      <section id="about">
+        <h2>About</h2>
+        <p>ここに概要文。</p>
+      </section>
+      <section id="service">
+        <h2>Service</h2>
+        <p>ここにサービス説明。</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>お問い合わせ情報など。</p>
+      </section>
     </article>
-
-    <!-- 将来の拡張用サイドバー -->
-    <aside style="display:none;"></aside>
+  </main>
+  <footer>
+    <p>&copy; 2025 サイト名</p>
+  </footer>
 </body>
 </html>
